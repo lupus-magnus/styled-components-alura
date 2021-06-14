@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Icone = styled.img`
     height: 25px;
@@ -6,10 +6,11 @@ export const Icone = styled.img`
 `
 
 export const Box = styled.div`
-    display: flex;
+    display: flex; 
     flex-direction: column;
+    
     justify-content: space-between;
-    background-color: white;
+    background-color: ${({ theme }) => {return theme.inside}};
     border-radius: 5px;
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
     padding: 20px;
